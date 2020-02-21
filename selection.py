@@ -7,11 +7,12 @@ def selectionSort(numbers):
             print("unsorted element is " +str(numbers[x]))
             if numbers[y] < numbers[min]:
                 min = y
-                aux = numbers[x]
-                numbers[x] = numbers[min]
-                numbers[min] = aux
-                print("swap")
-                print(numbers)
+                
+        aux = numbers[x]
+        numbers[x] = numbers[min]
+        numbers[min] = aux
+        print("swap")
+        print(numbers)
     return numbers
 
 print(selectionSort(numbers))
