@@ -7,9 +7,9 @@ def insertionSort(numbers):
         y = x
 
         while y > 0 and numbers[y-1] > key:
-            #print("Swapped {} for {}".format(my_list[position], my_list[position-1]))
+            print("Swapped {} for {}".format(numbers[y], numbers[y-1]))
             numbers[y] = numbers[y-1]
-            #print(numbers)
+            print(numbers)
             y -= 1
 
         numbers[y] = key
