@@ -4,7 +4,7 @@ def selectionSort(numbers):
     for x in range(len(numbers)):
         min = x
         for y in range(x + 1, len(numbers)): 
-            print("unsorted element is " +str(numbers[x]))
+            print("unsorted element is " +str(numbers[x])+ "compared to " +str(numbers[y]))
             if numbers[y] < numbers[min]:
                 min = y
                 
